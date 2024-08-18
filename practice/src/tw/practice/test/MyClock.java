@@ -43,8 +43,7 @@ public class MyClock extends JPanel {
 			milisecond = System.currentTimeMillis();
 			second = (Math.PI/30000)*milisecond;
 			minute = second/60;
-			hour = (minute/60)/24;
-			System.out.println(hour/24);
+			hour = ((minute/60)/12)-(Math.PI/6);
 			repaint();
 		}
 	}
